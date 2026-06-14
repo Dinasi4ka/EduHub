@@ -1,0 +1,9 @@
+**/venv/
+**/env/
+**/__pycache__/
+*.pyc
+.idea/
+.vscode/
+**/.env
+**/*.sqlite3
+**/node_modules/

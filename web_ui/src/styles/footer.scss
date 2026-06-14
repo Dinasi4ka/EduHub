@@ -1,0 +1,105 @@
+.pointer{
+  cursor: pointer;
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 50px;
+  padding-bottom: 26px;
+  padding-left: 80px;
+  padding-right: 173px;
+  background-color: rgba(171, 0, 187, 0.5);
+  color: #FFFFFF;
+
+  &__column {
+    h3 {
+      font-size: 24px;
+      font-weight: bold;
+      margin: 0;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      position: relative;
+
+      .footer_line{
+        position: absolute;
+        width: 9px;
+        height: 105px;
+        top: -18px;
+        left: -10px;
+        background-image: url('../assets/footer_line.svg');
+        background-size: cover;
+      }
+
+      li {
+        font-size: 14px;
+        display: flex;
+        gap: 9px;
+      }
+    }
+
+    p {
+      font-size: 14px;
+    }
+  }
+  &_title_block{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 6px;
+  }
+  &_title{
+    color: #000000;
+    font-size: 32px;
+  }
+
+  &__social-icons{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  .insta_svg{
+    width: 24px;
+    height: 24px;
+    color: white;
+    background-image: url('../assets/inst.png');
+    background-size: cover;
+  }
+  .facebook_svg{
+    width: 24px;
+    height: 24px;
+    background-image: url('../assets/facebook.png');
+    background-size: cover;
+  }
+  .telegram_svg{
+    width: 20px;
+    height: 20px;
+    background-image: url('../assets/tg.png');
+    background-size: cover;
+  }
+  .location_svg{
+    margin-left: 2px;
+    width: 10px;
+    height: 13.3px;
+    background-image: url('../assets/location.svg');
+    background-size: cover;
+  }
+  .email_svg{
+    width: 14px;
+    height: 10px;
+    background-image: url('../assets/email.png');
+    background-size: cover;
+  }
+  .phone_svg{
+    margin-left: 1px;
+    width: 12px;
+    height: 12px;
+    background-image: url('../assets/phone.png');
+    background-size: cover;
+  }
+}

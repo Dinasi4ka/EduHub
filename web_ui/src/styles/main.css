@@ -1,0 +1,200 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #333333;
+  font-family: "Play", sans-serif;
+}
+
+html {
+  height: 100%;
+  font-size: 10px;
+}
+
+.root {
+  height: 100%;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login_form {
+  position: relative;
+  background-color: #FFFFFF;
+  border-radius: 40px;
+  height: 570px;
+  width: 590px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.login_form_svg {
+  margin-top: 38px;
+  width: 80px;
+  height: 80px;
+  background-image: url("../assets/circle-user.svg");
+  background-size: cover;
+}
+
+.login_form .register_student_form_button {
+  border: none;
+}
+
+.login_form .forgot_password {
+  font-size: 14px;
+  position: absolute;
+  color: rgba(0, 0, 0, 0.5);
+  left: 5px;
+  bottom: -30px;
+  cursor: pointer;
+}
+
+.login_form .register {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  text-decoration: underline;
+  right: 5px;
+  bottom: -40px;
+  cursor: pointer;
+}
+
+.register_student {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  background: linear-gradient(to right, #FCFEFE, #ECC4FF);
+  align-items: center;
+  justify-content: center;
+}
+
+.register_student_form {
+  margin-top: 6%;
+  position: relative;
+  width: 590px;
+  height: 570px;
+  border-radius: 40px;
+  background-color: #FFFFFF;
+  border: 1px solid #AB00BB;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 24px;
+  color: #1B1D1F;
+  -webkit-text-stroke: 1px #AB00BB;
+}
+.register_student_form_title {
+  margin-top: 30px;
+  margin-bottom: 0;
+  font-size: 24px;
+}
+.register_student_form_block {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  line-height: 24px;
+  font-size: 16px;
+  gap: 10px;
+  position: relative;
+}
+.register_student_form_input {
+  width: 450px;
+  height: 40px;
+  padding-left: 10px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #AB00BB;
+  box-sizing: border-box;
+}
+.register_student_form_input:focus {
+  outline: none;
+  background-color: inherit;
+}
+.register_student_form_button {
+  margin-top: 48px;
+  border-radius: 8px;
+  background-color: #D34FFF;
+  width: 450px;
+  height: 46px;
+  border: 1px solid #AB00BB;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  cursor: pointer;
+}
+.register_student_form_button p {
+  -webkit-text-stroke: 0;
+  color: #FFFFFF;
+  line-height: 24px;
+  font-size: 16px;
+}
+
+.teacher_register {
+  margin-top: 10px;
+}
+
+.teacher_register_button {
+  margin-top: 22px;
+  width: 457px;
+}
+
+.teacher_register_margin {
+  margin-bottom: 20px;
+}
+
+.choose_user_type {
+  height: 445px;
+}
+.choose_user_type label {
+  margin-top: 15px;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.choose_image_block {
+  margin-top: 29px;
+  display: flex;
+  gap: 59px;
+}
+.choose_image_block_student {
+  width: 171px;
+  height: 196px;
+  border: 2px solid #D34FFF;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+}
+.choose_image_block_teacher {
+  width: 171px;
+  height: 196px;
+  border: 2px solid #D34FFF;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.register_student_svg {
+  margin-top: 10px;
+  width: 100px;
+  height: 135px;
+  background-image: url("../assets/student.png");
+  background-size: cover;
+}
+
+.register_teacher_svg {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 125px;
+  height: 125px;
+  background-image: url("../assets/tutor.png");
+  background-size: cover;
+}
+
+/*# sourceMappingURL=main.css.map */

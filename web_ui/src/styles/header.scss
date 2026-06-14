@@ -1,0 +1,91 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 27px 55px;
+  background: linear-gradient(to left, #FCFEFE, #ECC4FF);
+
+  &_manage{
+    display: flex;
+    align-items: center;
+  }
+  &_search_block{
+    display: flex;
+  }
+  &__container{
+    margin-left: 232px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    .register_student_form_button{
+      margin: 0;
+      width: 121px;
+      height: 38px;
+      color: white;
+      border: 0;
+      font-size: 18px;
+    }
+  }
+
+  &__search {
+    width: 824px;
+    height: 38px;
+    padding: 9px;
+    font-size: 18px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    border: 0;
+
+    &:focus {
+      outline: none;
+      background-color: white;
+    }
+  }
+
+  &__login {
+    margin-left: 21px;
+    background-color: #FFFFFF;
+    color: #D34FFF;
+    border-radius: 5px;
+    width: 90px;
+    font-size: 18px;
+    border: 1px solid #AB00BB;
+    height: 38px;
+    cursor: pointer;
+  }
+
+  &_menu {
+    width: 48px;
+    height: 29px;
+    margin-left: 22px;
+    background-image: url('../assets/menu.svg');
+    background-size: cover;
+    cursor: pointer;
+    position: relative;
+    &_droplist{
+      display: none;
+      position: absolute;
+      top: 30px;
+      right: -16px;
+      font-size: 16px;
+      background-color: #FFFFFF;
+      border-radius: 5px;
+      border: 1px solid #D34FFF;
+      flex-direction: column;
+
+      div{
+        padding: 10px 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      div:hover{
+        background-color: #D34FFF;
+      }
+    }
+    &:hover &_droplist {
+      display: flex;
+    }
+  }
+}

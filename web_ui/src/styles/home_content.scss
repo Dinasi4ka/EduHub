@@ -1,0 +1,127 @@
+.features{
+  display: flex;
+  gap: 92px;
+}
+.feature{
+  width: 290px;
+  height: 414px;
+  border: 1px solid #D34FFF;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  align-items: center;
+
+  &_button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    color: black;
+    line-height: 24px;
+    font-size: 15px;
+    width: 192px;
+    height: 38px;
+    background-color: rgba(211, 83, 254, 0.38);
+    cursor: pointer;
+  }
+}
+.group_lessons{
+  margin-top: 30px;
+  margin-left: 1px;
+  padding-bottom: 8px;
+  background-repeat: no-repeat;
+  width: 290px;
+  height: 225px;
+  background-image: url('../assets/photo_2024-11-21_19-06-58.jpg');
+  border-radius: 20px 20px 0 0;
+  border-bottom: 1px solid #D34FFF;
+}
+.tutoring_session{
+  margin-top: 0;
+  padding-bottom: 40px;
+  background-repeat: no-repeat;
+  width: 292px;
+  height: 223px;
+  background-image: url('../assets/tutoring_session.png');
+  border-radius: 20px 20px 0 0;
+  border-bottom: 1px solid #D34FFF;
+}
+.self_study{
+  margin-top: 20px;
+  padding-bottom: 26px;
+  background-repeat: no-repeat;
+  width: 292px;
+  height: 217px;
+  background-image: url('../assets/self_study.png');
+  border-radius: 20px 20px 0 0;
+  border-bottom: 1px solid #D34FFF;
+}
+.content_home{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 111px;
+  padding-bottom: 148px;
+  gap: 134px;
+  background-color: white;
+}
+.hero{
+  display: flex;
+  padding: 14px 18px;
+  flex-direction: column;
+  width: 738px;
+  height: 357px;
+  border: 1px solid #D34FFF;
+  border-radius: 20px;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+
+  .group{
+    position: absolute;
+    width: 296px;
+    height: 185px;
+    background-image: url('../assets/group.png');
+    margin: 0;
+    left: 10px;
+    bottom: 0;
+  }
+
+  .stack_books{
+    position: absolute;
+    width: 155px;
+    height: 134px;
+    background-image: url('../assets/stack_of_books.png');
+    margin: 0;
+    bottom: 0;
+    right: 150px;
+  }
+
+  .vector{
+    position: absolute;
+    width: 142px;
+    height: 357px;
+    background-image: url('../assets/vector.jpg');
+    margin: 0;
+    bottom: 0;
+    right: 0;
+  }
+
+  div{
+    margin-left: 140px;
+  }
+
+  h1{
+    font-size: 30px;
+    white-space: pre-line;
+    margin-bottom: 20px;
+    margin-top: 0;
+    -webkit-text-stroke: 1px #D34FFF;
+  }
+  p{
+    margin: 0;
+    font-size: 20px;
+    white-space: pre-line;
+  }
+}

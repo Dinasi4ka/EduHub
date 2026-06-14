@@ -1,0 +1,159 @@
+.register_column{
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 40px;
+  margin: 40px;
+}
+
+.back_home{
+  position: absolute;
+  margin: 10px;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  background-image: url('../assets/arrow_home.png');;
+}
+.register_student{
+  flex-direction: column;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  background: linear-gradient(to right, #FCFEFE, #ECC4FF);
+  align-items: center;
+  justify-content: center;
+  overflow-y: auto;
+
+  .edit_form{
+    position: relative;
+    display: flex;
+    height: auto;
+    width: auto;
+    padding: 10px 20px 30px 20px;
+  }
+
+  &_form{
+    margin-top: 6%;
+    position: relative;
+    width: 590px;
+    height: 570px;
+    border-radius: 40px;
+    background-color: #FFFFFF;
+    border: 1px solid #AB00BB;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 24px;
+    color: #1B1D1F;
+
+    &_title{
+      margin-top: 30px;
+      margin-bottom: 0;
+      font-size: 24px;
+    }
+    &_block{
+      display: flex;
+      flex-direction: column;
+      margin-top: 30px;
+      line-height: 24px;
+      font-size: 16px;
+      gap: 10px;
+      position: relative;
+    }
+    &_input{
+      width: 450px;
+      height: 40px;
+      padding-left: 10px;
+      font-size: 16px;
+      border-radius: 8px;
+      border: 1px solid #AB00BB;
+      box-sizing: border-box;
+
+      &:focus {
+        outline: none;
+        background-color: inherit;
+      }
+    }
+    &_button{
+      margin-top: 48px;
+      border-radius: 8px;
+      background-color: #D34FFF;
+      width: 450px;
+      height: 46px;
+      border: 1px solid #AB00BB;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      flex-wrap: wrap;
+      cursor: pointer;
+    }
+    &_button p{
+      -webkit-text-stroke: 0;
+      color: #FFFFFF;
+      line-height: 24px;
+      font-size: 16px;
+    }
+  }
+}
+.teacher_register{
+  margin-top: 10px;
+}
+.teacher_register_button{
+  margin-top: 22px;
+  width: 457px;
+}
+.teacher_register_margin{
+  margin-bottom: 20px;
+}
+.choose_user_type{
+  height: 445px;
+  & label{
+    margin-top: 15px;
+    font-size: 24px;
+    line-height: 24px;
+  }
+}
+.choose_image_block{
+  margin-top: 29px;
+  display: flex;
+  gap: 59px;
+
+  &_student{
+    width: 171px;
+    height: 196px;
+    border: 2px solid #D34FFF;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  &_teacher{
+    width: 171px;
+    height: 196px;
+    border: 2px solid #D34FFF;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+  }
+}
+.register_student_svg{
+  margin-top: 10px;
+  width: 100px;
+  height: 135px;
+  background-image: url('../assets/student.png');
+  background-size: cover;
+}
+.register_teacher_svg{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 125px;
+  height: 125px;
+  background-image: url('../assets/tutor.png');
+  background-size: cover;
+}

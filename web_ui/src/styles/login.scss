@@ -1,0 +1,179 @@
+.join_group_meet{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  margin: 30px;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+
+  label{
+    font-size: 16px;
+  }
+  .register_student_form_input{
+    height: 70px;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 30px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+    li {
+      margin-bottom: 8px;
+
+      input:checked ~ .checkmark {
+        background-color: #D34FFF;
+      }
+      .checkmark{
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 15px;
+        width: 15px;
+        background-color: #FFFFFF;
+        border: 1px solid #D34FFF;
+        border-radius: 5px;
+      }
+      input[type="checkbox"] {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+      }
+      .checkbox_name{
+        margin-left: 30px;
+      }
+
+      .checkbox_label {
+        display: flex;
+        position: relative;
+        align-items: center;
+        color: #000000;
+        font-size: 14px;
+
+        input {
+          margin-right: 10px;
+          accent-color: #AB00BB;
+        }
+      }
+    }
+  }
+
+  .tutor_course_button{
+    margin-top: 20px;
+  }
+  .button{
+    color: white;
+    font-size: 20px;
+  }
+  .tutor{
+    font-size: 16px;
+    width: 100%;
+    font-weight: normal;
+  }
+  .datetime_block{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+    font-size: 16px;
+    font-weight: normal;
+    .tutor_times{
+      display: flex;
+      width: 80%;
+      justify-content: space-between;
+    }
+    .tutor_times.selector{
+      border-radius: 5px;
+      border: 1px solid gray;
+      box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.1);
+      padding: 8px;
+      flex-direction: column;
+      gap: 5px;
+      height: 80px;
+      overflow-y: auto;
+      .row{
+        display: flex;
+        justify-content: space-between;
+        .checked{
+          background-color: #D34FFF;
+        }
+      }
+    }
+  }
+  .datetime{
+    border: solid 1px #D34FFF ;
+    border-radius: 5px;
+    padding: 5px;
+  }
+  .when{
+    font-size: 16px;
+    font-weight: normal;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    .tutor_block{
+      width: 100%;
+    }
+  }
+  .theme{
+    display: flex;
+    font-weight: normal;
+    font-size: 18px;
+    gap: 10px;
+    &_name{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+  }
+}
+.login_form{
+  margin-top: 6%;
+  position: relative;
+  background-color: #FFFFFF;
+  border-radius: 40px;
+  height: 570px;
+  width: 590px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .join_group_meet_photo{
+    width: 100px;
+    height: 100px;
+  }
+  &_svg{
+    margin-top: 38px;
+    width: 80px;
+    height: 80px;
+    background-image: url('../assets/circle-user.svg');
+    background-size: cover;
+  }
+}
+.login_form .register_student_form_button{
+  border: none;
+}
+.login_form .forgot_password{
+  font-size: 14px;
+  position: absolute;
+  color: rgba(0, 0, 0, 0.5);
+  left: 5px;
+  bottom: -30px;
+  cursor: pointer;
+}
+.login_form .register{
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  text-decoration: underline;
+  right: 5px;
+  bottom: -40px;
+  cursor: pointer;
+}
